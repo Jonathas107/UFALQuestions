@@ -15,7 +15,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
             android:layout_height="140dp"
-            android:src="@drawable/Logo"/>
+            android:src="@drawable/logo"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,21 +28,12 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <Button
-        android:layout_marginTop="20dp"
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnSigssnIn"
+        android:layout_width="390dp"
+        android:layout_height="60dp"
         android:layout_gravity="center_horizontal"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:autoText="false"
-        android:background="@color/colorAccent"
-        android:focusableInTouchMode="false"
-        android:focusedByDefault="false"
-        android:fontFamily="sans-serif"
-        android:text="Entrar com a conta do google"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/background_light"
-        android:textSize="17dp"
-        android:textStyle="bold" />
+        app:buttonSize="wide" />
 
     <TextView
         android:id="@+id/textView"
@@ -58,10 +49,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:autoText="false"
         android:background="@color/colorAccent"
-        android:focusableInTouchMode="false"
-        android:focusedByDefault="false"
         android:fontFamily="sans-serif"
         android:text="Entrar no forum"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
